@@ -54,8 +54,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    Tag *lTag = self.tags[indexPath.section];
-    Receipt *receipt = lTag.receipts[indexPath.row];
+    Tag *tag = self.tags[indexPath.section];
+    Receipt *receipt = tag.receipts[indexPath.row];
     cell.textLabel.text = receipt.note;
     return cell;
 }

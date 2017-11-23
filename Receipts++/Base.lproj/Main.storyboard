@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WOU-TD-xyb">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="536"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="632"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="tDM-N1-anB" rowHeight="51" style="IBUITableViewCellStyleDefault" id="YpE-HN-ndS">
@@ -45,8 +45,8 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KyA-qN-f58">
-                                <rect key="frame" x="120" y="586" width="135" height="30"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="0.0" y="632" width="375" height="35"/>
+                                <color key="backgroundColor" red="0.0033820229280348175" green="0.084486252861084368" blue="0.44923898963730569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Add Receipts">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -57,12 +57,13 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="KyA-qN-f58" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8MN-Bc-cMI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WOU-TD-xyb" secondAttribute="bottom" constant="35" id="Ebn-nS-hOM"/>
+                            <constraint firstItem="KyA-qN-f58" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="HAa-He-YDN"/>
                             <constraint firstItem="WOU-TD-xyb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JXb-pZ-eEe"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KyA-qN-f58" secondAttribute="trailing" constant="120" id="K8H-Ct-LqG"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KyA-qN-f58" secondAttribute="bottom" constant="51" id="SuD-I5-wfr"/>
-                            <constraint firstItem="KyA-qN-f58" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="VZU-TA-HbY"/>
-                            <constraint firstItem="KyA-qN-f58" firstAttribute="top" secondItem="WOU-TD-xyb" secondAttribute="bottom" constant="50" id="a6H-V8-58R"/>
+                            <constraint firstItem="KyA-qN-f58" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="b2a-a5-VGi"/>
                             <constraint firstItem="WOU-TD-xyb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bKC-gV-w1Z"/>
+                            <constraint firstItem="KyA-qN-f58" firstAttribute="top" secondItem="WOU-TD-xyb" secondAttribute="bottom" id="foh-47-60K"/>
                             <constraint firstItem="WOU-TD-xyb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fr6-6r-df1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
