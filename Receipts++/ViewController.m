@@ -11,6 +11,7 @@
 #import "Tag+CoreDataClass.h"
 #import "AddReceiptViewController.h"
 #import "DataHandler.h"
+#import "CustomTableViewCell.h"
 
 @interface ViewController () <UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -53,10 +54,11 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    CustomTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     Tag *tag = self.tags[indexPath.section];
     Receipt *receipt = tag.receipts[indexPath.row];
-    cell.textLabel.text = receipt.note;
+    cell.infoLabel.text = receipt.note;
+    cell.amountLabel.text = [NSString stringWithFormat:@"$%.2f", receipt.amount];
     return cell;
 }
 

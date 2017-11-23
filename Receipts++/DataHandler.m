@@ -33,8 +33,8 @@
     NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"Tag"];
     NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"tagName" ascending:NO];
     
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"tagName == %@", self.tag.tagName];
-    fetchRequest.predicate = predicate;
+//    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"tagName == %@", self.tag.tagName];
+//    fetchRequest.predicate = predicate;
     
     fetchRequest.sortDescriptors = @[sortDescriptor];
     return [self.context executeFetchRequest:fetchRequest error:nil];

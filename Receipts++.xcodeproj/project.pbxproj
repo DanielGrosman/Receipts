@@ -16,6 +16,7 @@
 		C05092EC1FC73B9700564044 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C05092EB1FC73B9700564044 /* main.m */; };
 		C05092F71FC74AC700564044 /* AddReceiptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C05092F61FC74AC700564044 /* AddReceiptViewController.m */; };
 		C05092FA1FC74D9800564044 /* DataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C05092F91FC74D9800564044 /* DataHandler.m */; };
+		C050930A1FC784B800564044 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C05093091FC784B800564044 /* CustomTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		C05092F61FC74AC700564044 /* AddReceiptViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddReceiptViewController.m; sourceTree = "<group>"; };
 		C05092F81FC74D9800564044 /* DataHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataHandler.h; sourceTree = "<group>"; };
 		C05092F91FC74D9800564044 /* DataHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataHandler.m; sourceTree = "<group>"; };
+		C05093081FC784B800564044 /* CustomTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		C05093091FC784B800564044 /* CustomTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +78,8 @@
 				C05092F81FC74D9800564044 /* DataHandler.h */,
 				C05092F91FC74D9800564044 /* DataHandler.m */,
 				C05092DF1FC73B9600564044 /* Main.storyboard */,
+				C05093081FC784B800564044 /* CustomTableViewCell.h */,
+				C05093091FC784B800564044 /* CustomTableViewCell.m */,
 				C05092E51FC73B9700564044 /* Assets.xcassets */,
 				C05092E71FC73B9700564044 /* LaunchScreen.storyboard */,
 				C05092EA1FC73B9700564044 /* Info.plist */,
@@ -156,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C05092DE1FC73B9600564044 /* ViewController.m in Sources */,
+				C050930A1FC784B800564044 /* CustomTableViewCell.m in Sources */,
 				C05092DB1FC73B9600564044 /* AppDelegate.m in Sources */,
 				C05092EC1FC73B9700564044 /* main.m in Sources */,
 				C05092F71FC74AC700564044 /* AddReceiptViewController.m in Sources */,
